@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" async defer></script>
+</head>
+<body>
+    <div id="main-container">
+        <div id="background-image">
+        
+            <div id="banner">
+                <img src="./images/odin.png" alt="Image of Odin">
+                <p>ODIN</p>
+            </div>
+        </div>
+        <main>
+            <div class="content-section">
+                <p>
+                    <strong>This is not a real online service! You know you need something like this
+                        in your life to help you realise your deepest dreams.<br>
+                        Sign up <em>now</em> to get started.<br>
+                        <br>
+                        You <em>know</em> you want to!</strong>
+                </p>
+            </div>
+            <form action="/" method="POST">
+                <h3>Let's do this!</h3>
+                <div id="input-container">
+                    <div class="form-input">
+                        <label for="">FIRST NAME</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-input">
+                        <label for="">LAST NAME</label>
+                        <input type="text" autofocus>
+                    </div>
+                    <div class="form-input">
+                        <label for="">EMAIL</label>
+                        <input type="email">
+                    </div>
+                    <div class="form-input">
+                        <label for="">PHONE NUMBER</label>
+                        <input type="tel">
+                    </div>
+                    <div class="form-input" data-password-div>
+                        <label for="">PASSWORD</label>
+                        <input type="password" data-password>
+                    </div>
+                    <div class="form-input">
+                        <label for="">CONFIRM PASSWORD</label>
+                        <input type="password" data-password-confirmation>
+                    </div>
+                </div>
+            </form>
+            <div class="content-section">
+                <button type="button" data-submit-button>Create Account</button>
+                <p>Already have an account? <a href ='/'>Log in</a></p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

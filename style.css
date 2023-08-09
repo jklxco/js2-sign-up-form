@@ -1,0 +1,145 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('fonts/Norse-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}   
+
+:root {
+    --font-color-dark: #252525;
+    --font-color-light: white;
+    --color-accent: #596D48;
+    --color-border: #E5E7EB;
+    --bg-color-light: rgb(247, 247, 247);
+    --bg-color-grey: rgb(233, 232, 232);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: #131313;
+    display: flex;
+    justify-content: center;
+}
+
+#main-container {
+    display: flex;
+    height: 100vh;
+    max-width: 85%;
+    color: var(--font-color-dark);
+}
+
+#background-image{
+    min-width: 40%;
+    background-image: url(images/bg-plants.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: static;
+
+}
+
+#banner {
+    background-color: rgba(0,0,0, 0.5);
+    height: 15%;
+    color: var(--font-color-light);
+    font-family: Norse-Bold;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 12rem;
+}
+
+#banner > img {
+    height: 80%;
+}
+
+main {
+    background-color: var(--bg-color-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 50%;
+}
+
+.content-section {
+    padding: 2rem;
+    max-width: 80%;
+}
+
+form {
+    padding: 1rem 2rem;
+    background-color: var(--bg-color-light);
+    box-shadow: 0px 2px 5px lightgrey;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6rem;
+    padding: 0.25rem;
+}
+
+input {
+    appearance: none;
+    border: 1px solid #E5E7EB;
+    max-width: 70%;
+    height: 1.5rem;
+    margin-top: 0.1rem;
+    padding-left: 0.25rem;
+    border-radius: 0.3rem;
+    
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(44, 61, 214);
+    
+    box-shadow: 0px 2px 2px rgba(0,0,0, 0.5);
+}
+
+#input-container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin-top: 0.5rem;
+}
+
+input.error {
+    border: 1px solid red;
+}
+
+.error-message::after {
+    display: content;
+    content: '* Passwords do not match';
+    height: 10px;
+    color: red;
+}
+
+button {
+    background-color: var(--color-accent);
+    color: var(--font-color-light);
+    padding: 0.8rem 3rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+button:hover{
+    background-color: #6a8156;
+}
+
+a {
+    color: var(--color-accent);
+    font-weight: bold;
+    
+}
